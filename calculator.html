@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="calculator">
+        <div class="title">
+            <h2>Alberto</h2>
+        </div>
+        <div class="output">
+            <p id="output"></p>
+        </div>
+        <div class="buttons">
+            <div class="row-first">
+                <div class="details">
+                    <h1>My Calculator</h1>
+                    <p>Sean Rad P. Alberto</p>
+                    <p>BSCS - 2A</p>
+                </div>
+                <button class="operation" onclick="deleteInput()">DEL</button>
+            </div>
+            <div class="row">
+                <button class="operation" onclick="changeSymbol()">&#177;</button>
+                <button class="number" onclick="appendToOutput(7)">7</button>
+                <button class="number" onclick="appendToOutput(8)">8</button>
+                <button class="number" onclick="appendToOutput(9)">9</button>
+                <button class="operation" onclick="division()">&#247;</button>
+            </div>
+            <div class="row">
+                <button class="operation" onclick="modulo()">&#37;</button>
+                <button class="number" onclick="appendToOutput(4)">4</button>
+                <button class="number" onclick="appendToOutput(5)">5</button>
+                <button class="number" onclick="appendToOutput(6)">6</button>
+                <button class="operation" onclick="multiplication()">&#10005;</button>
+            </div>
+            <div class="row">
+                <button class="operation" onclick="squareRoot()">&#8730;</button>
+                <button class="number" onclick="appendToOutput(1)">1</button>
+                <button class="number" onclick="appendToOutput(2)">2</button>
+                <button class="number" onclick="appendToOutput(3)">3</button>
+                <button class="operation" onclick="subtraction()">&#8722;</button>
+            </div>
+            <div class="row">
+                <button class="operation" onclick="clearOutput()">AC</button>
+                <button class="number" onclick="appendToOutput(0)">0</button>
+                <button class="number" onclick="appendDecimal()">.</button>
+                <button class="operation" onclick="calculate()">=</button>
+                <button class="operation" onclick="addition()">&#43;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
